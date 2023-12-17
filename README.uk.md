@@ -34,13 +34,13 @@
 по настройке твоего репозитория. Зайди во вкладку `Settings` и в подсекции
 `Actions` выбери выбери пункт `General`.
 
-![GitHub actions settings](./assets/actions-config-step-1.png)
+![GitHub actions settings](./instr/actions-config-step-1.png)
 
 Пролистай страницу до последней секции, в которой убедись что выбраны опции как
 на следующем изображении и нажми `Save`. Без этих настроек у сборки будет
 недостаточно прав для автоматизации процесса деплоя.
 
-![GitHub actions settings](./assets/actions-config-step-2.png)
+![GitHub actions settings](./instr/actions-config-step-2.png)
 
 Продакшн версия проекта будет автоматически собираться и деплоиться на GitHub
 Pages, в ветку `gh-pages`, каждый раз когда обновляется ветка `main`. Например,
@@ -59,7 +59,7 @@ Pages, в ветку `gh-pages`, каждый раз когда обновляе
 выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
 это небыло сделано автоматически.
 
-![GitHub Pages settings](./assets/repo-settings.png)
+![GitHub Pages settings](./instr/repo-settings.png)
 
 ### Статус деплоя
 
@@ -72,7 +72,7 @@ Pages, в ветку `gh-pages`, каждый раз когда обновляе
 Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
 выпадающем окне перейти по ссылке `Details`.
 
-![Deployment status](./assets/status.png)
+![Deployment status](./instr/status.png)
 
 ### Живая страница
 
