@@ -1,0 +1,28 @@
+// сервіси 
+@import './servise/common.scss';
+@import './servise/mixins.scss';
+@import './servise/variables.scss';
+// загальгні 
+@import './commonStyles/reset.scss';
+@import './commonStyles/container.scss';
+@import './commonStyles/button.scss';
+@import './commonStyles/fonts.scss';
+
+// компоненти 
+
+@import './components/collection-header.scss';
+@import './components/film_card.scss';
+@import './components/film_list.scss';
+@import './components/home-heder.scss';
+@import './components/footer.scss';
+@import './components/pagination.scss';
+
+@import './components/modall.scss'; 
+// 2 сторінка  
+@import './components/collection-body.scss';
+
+
+
+
+
+

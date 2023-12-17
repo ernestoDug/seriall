@@ -1,0 +1,23 @@
+:root {
+  // для шрифтів 
+  --text-color1: azure;
+  --text-color2: #f0b113;   
+  --text-color3: #1d8c85;
+  --text-color4: rgb(103, 171, 213);
+  --warning-color: rgb(212, 135, 35);
+// для елементів 
+--shadow-color: #8B008B;
+  --elem-color1: #4B0082;
+  --copy-writes-color: #545454;
+
+  --transition-time: 250ms;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}

@@ -1,0 +1,52 @@
+@mixin for-mobile-lower {
+    @media (max-width : 319.98px) {
+        @content ;
+    }
+}
+// моб 
+@mixin for-mobile-up {
+    @media (min-width : 320px) {
+        @content ;
+    }
+}
+
+@mixin for-mobile-only {
+    @media (max-width : 767.98px) {
+        @content ;
+    }
+}
+
+// мобтаб 
+@mixin for-mobile-tablet-only {
+    @media (max-width : 1279.98px) {
+        @content ;
+    }
+}
+
+// таб 
+@mixin for-tablet-only {
+    @media (min-width : 768px) and (max-width: 1279.98px) {
+        @content ;
+    }
+}
+
+@mixin for-tablet-up {
+    @media (min-width : 768px) {
+        @content ;
+    }
+}
+
+// деск 
+@mixin for-desktop-up {
+    @media (min-width: 1280px) {
+        @content ;
+    }
+}
+
+
+// транзишен
+@mixin transition($property) {
+    $duration: 250ms;
+    $timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+    transition: $property $duration $timing-function;
+  }

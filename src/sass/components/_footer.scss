@@ -1,0 +1,35 @@
+.footer {
+  font-size: 14px;
+  color: var(--copy-writes-color);
+  line-height: 1.8;
+  background: linear-gradient(90deg, rgba(247,235,163,0.9024859943977591) 0%, rgba(253,220,29,1) 50%, rgba(252,151,69,1) 100%);
+
+  &__icon {
+    margin: 0 5px;
+  }
+}
+
+.footer .container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    height: 77px;
+    font-size: 16px;
+    line-height: 1.17;
+  }
+}
+
+.goit_text {
+  display: inline-block;
+}
+
+.footer__icon-heart {
+fill: var(--elem-color1);
+}
+
+
+

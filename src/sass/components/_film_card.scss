@@ -1,0 +1,59 @@
+
+.film-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  @include for-tablet-up {
+    margin-bottom: 0;
+  }
+  &__link {
+   color: var(--text-color1);
+        text-decoration: none; 
+  }
+  &__film-img {
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    height: 398px;
+    width: 100%;
+
+
+    @include for-tablet-up {
+      height: 455px;
+    }
+    @include for-desktop-up {
+      height: 574px;
+    }
+  }
+  &__film-name {
+    text-transform:capitalize;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0em;
+
+    @include for-desktop-up {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  &__genre {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: var(--text-color2);
+
+    @include for-desktop-up {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  &__footer {
+    display: flex;
+  }
+  
+
+}

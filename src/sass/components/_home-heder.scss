@@ -1,0 +1,234 @@
+.header {
+  height: 230px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/BGmob.jpg);
+  
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/BGmob@2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    height: 219px;
+    background-image: url(../images/BGtab.jpg);
+// ретина 
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/BGtab@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1600px;
+    height: 216px;
+    margin: 0 auto;
+    background-image: url(../images/BGdesc.jpg);
+
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/BGdesc@2x.jpg);
+    }
+  }
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+// лого
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+// плівка на лого 
+.header__svg {
+  display: block;
+  justify-content: center;
+
+}
+// напис на лого 
+.header__LogoTitle {
+  display: none;
+  color: var(--elem-color1);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 10px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-size: 30px;
+    line-height: 1.16;
+    display: block;
+     
+  }
+}
+// навіг 
+.header__nav {
+  padding-top: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+// головна та моя колекція 
+.header__link {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: var(--elem-color1);
+}
+
+.header__list {
+  display: flex;
+  margin-left: auto;
+}
+// лішки
+.header__item {
+  margin-right: 40px;
+}
+.header__item:last-child {
+  margin-right: 0;
+}
+
+// форма 
+.header__search {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid var(--text-color2);
+}
+
+.header__input {
+  font-size: 14px;
+
+  min-width: 280px;
+  @media screen and (min-width: 768px) {
+    min-width: 336px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 394px;
+  }
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: var(--text-color1);
+}
+// п/х 
+.header__input::placeholder {
+  font-family: 'Roboto';
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+    z-index: -1;
+  color: var(--text-color2);
+}
+
+// кнопки 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  background-color: var(--text-color4);
+  border-radius: 50%;
+  outline: none;
+  border: none;
+@include transition(transform)
+}
+.btn:hover,
+.btn:focus {
+  transform: scale(1.3); 
+  
+}
+// кнопка пекмена
+.btn-cross {
+  padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2px;
+    right: 30px;
+  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+       background-color: var(--text-color2);
+    outline: none;
+    border-radius: 50%;
+    border: none;  
+    // поворот пекмена  
+    &:hover, &:focus > .header__icon-delete{
+      transform: scale(-1,1)
+    }
+      }
+// пекмен 
+.header__icon-delete {
+  display: block;
+  justify-content: center;
+  margin-right: 3px;
+  fill: var(--elem-color1);
+  @include transition(transform);    
+
+}
+
+
+.header__container-link {
+  margin-left: auto;    
+}
+.header__container-logo {
+  display: flex;
+}
+
+// пошуку дів 
+.header__search-wrapp {
+  margin-left: auto;
+  margin-right: auto;  
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    width: 394px;
+  }
+}
+// сповіщення 
+.header__warning-message {
+  padding-top: 20px;
+  border: transparent;
+  outline: transparent;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--warning-color);
+  }
+// акутальна вкладка 
+.header__link--current {
+  position: relative;
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background-color: var( --text-color2);
+  }
+}

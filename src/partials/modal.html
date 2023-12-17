@@ -1,0 +1,68 @@
+<div class="backdrop is-hidden js-backdrop"> 
+  <div class="modal">
+    <button type="button" class="modal__close-btn js-close"> 
+      <svg class="modal__close-icon" width="30" height="30" aria-label="close">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    
+    <div class="film__info-wrapper">  
+      <img
+        class="film__img"  
+        id="film__poster"
+        src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg";
+        alt=""
+      />
+      <div class="film__text-info-wrapper">
+        <h3 class="film__title" id="film__title">Назва СЕРІАЛУ</h3> 
+        <ul class="film-details__list">
+          <li class="film-details__item">
+            <p class="film-details__label">Голосувати / Проголосувало</p>
+            <p class="film-details__vote">  
+              <span
+                class="vote__voted vote__vote-average" 
+                id="film__vote-average"
+                >7.3</span
+              >
+              /
+              <span class="vote__voted vote__votes-count" id="film__vote-count"
+                >1260</span
+              >
+            </p>
+          </li>
+          <li class="film-details__item">
+            <p class="film-details__label">Популярність </p>
+            <p class="film-details__vote" id="film__popularity">100.2</p>
+          </li>
+          <li class="film-details__item">
+            <p class="film-details__label">Оригінальна назва</p>
+            <p class="film-details__vote" id="film__original-title">
+             Про СЕРІАЛ
+            </p>
+          </li>
+          <li class="film-details__item">
+            <p class="film-details__label">Жанр</p>
+            <p
+              class="film-details__vote"
+              id="film__genre"
+            >
+              яКИЙСЬ ЖАНР
+            </p>
+          </li>
+        </ul> 
+        <p class="film-details-label">Анотація</p>
+        <p class="film-details film__overview" id="film__overview">
+          оГЛЯД 
+        </p>
+        <div class="btn__wrapper">
+          <button class="btn--film btn_watched watched_send" type="button">Переглянуто</button>
+          <button class="btn--film btn_queue queue_send" type="button">У чергу</button>
+          
+        </div>
+        <div id="trailer-error" class="trailer-error"></div>
+      </div>
+    </div>
+  </div>
+  <!-- /modal  -->
+</div>
+<!-- / backdrop  -->

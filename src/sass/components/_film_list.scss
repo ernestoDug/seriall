@@ -1,0 +1,15 @@
+
+// cписок карток 
+.film-list {
+  @include for-tablet-up {
+    gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  @include for-desktop-up {
+    gap: 16px;
+    row-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,111 @@
+// хедер 
+.collection-header {
+  background-image: url(../images/collection-background-mob.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    height: 230px;
+    // ретіна 
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../images/collection-background-mob@2x.jpg)
+      }
+    
+        @media screen and (min-width: 768px) {
+        height: 219px;
+        background-image: url(../images/collection-background-tab.jpg);
+      // ретіна 
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/collection-background-tab@2x.jpg);
+        }
+      }
+    
+      @media screen and (min-width: 1280px) {
+        height: 216px;
+        max-width: 1600px;
+        margin: 0 auto;
+        background-image: url(../images/collection-background-desc.jpg);
+      // ретіна 
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi), 
+        (min-resolution: 2dppx) { 
+          background-image: url(../images/collection-background-desc@2x.jpg);
+        }
+      }
+    }
+
+.collection-header__container {  
+  display: flex;
+  justify-content: space-between;
+ padding-top: 40px;
+ margin-bottom: 60px;
+  align-items: center;
+}
+
+
+// кнопки фільтру 
+.filter__list {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 19.94px;
+  @include for-tablet-up {
+    margin-right: 15px;
+  }
+}
+// дивтись дивтитьс далі 
+.filter__button {
+  width: 129.53px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 36.19px 12px;
+  min-width: 129.53px;
+  font-weight: 500;
+  line-height: 1.33333;
+  text-transform: uppercase;
+  color: var(--text-color3);
+  background: var(--text-color2);
+  border: 1px solid var(--text-color4);
+  border-radius: 5px;
+
+  @include for-tablet-up {
+    padding-left: 38px;
+    padding-right: 38px;
+    min-width: 136px;
+  }
+}
+// ховерні фокуси 
+.filter__button:hover,
+.filter__button--active,
+.filter__button:focus {
+  background: var(--elem-color1);
+
+ @include transition(background-color);
+  
+  
+  cursor: pointer;
+}
+.menu__link.current:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7%;
+  width: 69px;
+  height: 3px;
+  border-radius: 2px;
+  background-color:var(--warning-color);
+}
+
+
+
