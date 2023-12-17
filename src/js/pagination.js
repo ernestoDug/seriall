@@ -1,5 +1,4 @@
 
-import $ from "jquery";
 
 import { renderFilmCards, getPopulars } from './popular.js';
 import { movieApi } from './film-search.js';
@@ -7,7 +6,7 @@ import { movieApi } from './film-search.js';
 
 
 window.addEventListener('load',
-$(window).on("load", function() {
+$(window).on("load", function() { 
  $(".loader_inner").fadeOut();
  $(".loader").delay(400).fadeOut("slow");
 }));
