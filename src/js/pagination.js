@@ -3,14 +3,6 @@
 import { renderFilmCards, getPopulars } from './popular.js';
 import { movieApi } from './film-search.js';
 
-
-
-window.addEventListener('load',
-$(window).on("load", function() { 
- $(".loader_inner").fadeOut();
- $(".loader").delay(400).fadeOut("slow");
-}));
-
 const pagMainRef = document.querySelector('.js-pagination');
 
 let currentNow = 1;
