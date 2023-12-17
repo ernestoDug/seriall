@@ -5,7 +5,7 @@ const save = (key, value) => {
   } catch (error) {
     console.error('Set state error: ', error.message);
   }
-};
+};  
 
 const load = key => {
   try {

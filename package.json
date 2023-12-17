@@ -2,6 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
+
   "homepage": "https://ernestoDug.github.io/seriall",
   "scripts": {
     "start": "parcel src/*.html",
@@ -9,12 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ernestoDug/seriall.git"
+    "url": "git+https://github.com/ernestoDug/seriall"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
@@ -25,11 +27,10 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
-    "@parcel/transformer-webmanifest": "^2.10.1",
     "buffer": "^6.0.3",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
-}
+}  
