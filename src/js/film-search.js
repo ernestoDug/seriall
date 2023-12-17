@@ -1,16 +1,14 @@
-
 const refs = {
-  form: document.querySelector(".js-header__search"),
+  form: document.querySelector('.js-header__search'),
 
-  input: document.querySelector(".js-header__input"), 
+  input: document.querySelector('.js-header__input'),
 
-  formButton: document.querySelector(".btn"),
+  formButton: document.querySelector('.btn'),
 
-  gallery: document.querySelector(".js-film-list"),
+  gallery: document.querySelector('.js-film-list'),
 
   warning: document.querySelector('.header__warning'),
   inputBtnClear: document.querySelector('.btn-cross'),
-
 };
 
 import axios from 'axios';
@@ -114,9 +112,8 @@ function onSearchClick(evt) {
     .trim()
     .toLowerCase();
 
-
-  // альетрантива 
-    if (!movieApi.query) {
+  // альетрантива
+  if (!movieApi.query) {
     emptyQueryOrNoResults();
     return;
   }
@@ -127,13 +124,12 @@ function onSearchClick(evt) {
     if (!data) return;
     const { page, total_pages, results } = data;
 
-        if (!total_pages) {
-         emptyQueryOrNoResults();
+    if (!total_pages) {
+      emptyQueryOrNoResults();
       return;
     }
 
     clearSearch();
-
 
     renderFilmCards(results);
 
